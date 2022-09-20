@@ -78,7 +78,7 @@ const NavBar = () => {
 
         <h1 className="nav-header text-xl sm:text-2xl lg:text-3xl px-2 font-medium mr-20 items-center">
           <span className="font-bold text-5xl ml-20 items-center">BTX</span>{" "}
-          Custom Cornhole Boards
+          <span className="hidden lg:flex items-center ml-20">Custom Cornhole Boards</span>
         </h1>
       </div>
       {/* search bar */}
@@ -111,7 +111,7 @@ const NavBar = () => {
       >
         <AiOutlineClose
           onClick={() => setNav(!nav)}
-          size={30}
+          size={20}
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4">
