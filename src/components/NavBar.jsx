@@ -1,65 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import {
-  AiOutlineMenu,
-  AiOutlineSearch,
-  AiOutlineClose,
-  AiFillHome,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
-import { BsFillCartFill, BsFillPersonLinesFill } from "react-icons/bs";
-import { MdRateReview } from "react-icons/md";
-import { HiMail } from "react-icons/hi";
+import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import { BsFillCartFill } from "react-icons/bs";
+import { links } from "../Data/links";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          <AiFillHome size={25} className="mr-4" />
-        </>
-      ),
-      link: "home",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          <BsFillPersonLinesFill size={25} className="mr-4" />
-        </>
-      ),
-      link: "about",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          <AiOutlineShoppingCart size={25} className="mr-4" />
-        </>
-      ),
-      link: "shop",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          <MdRateReview size={25} className="mr-4" />
-        </>
-      ),
-      link: "reviews",
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          <HiMail size={25} className="mr-4" />
-        </>
-      ),
-      link: "contact",
-    },
-  ];
   return (
     <div
       name="navbar"
@@ -78,7 +24,9 @@ const NavBar = () => {
 
         <h1 className="nav-header text-xl sm:text-2xl lg:text-3xl px-2 font-medium mr-20 items-center">
           <span className="font-bold text-5xl ml-20 items-center">BTX</span>{" "}
-          <span className="hidden lg:flex items-center ml-20">Custom Cornhole Boards</span>
+          <span className="hidden lg:flex items-center ml-20">
+            Custom Cornhole Boards
+          </span>
         </h1>
       </div>
       {/* search bar */}
@@ -115,13 +63,16 @@ const NavBar = () => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4">
-          BTX<span>Menu</span>
+          BTX <span>Menu</span>
         </h2>
         {/* menu links */}
         <nav>
           <ul className="p-4">
             {links.map(({ id, link, child }) => (
-              <li key={id} className="flex py-4">
+              <li
+                key={id}
+                className="flex py-4 hover:scale-105 hover:text-blue-600"
+              >
                 {child}
                 <Link to={link} smooth duration={400}>
                   {link.charAt(0).toUpperCase() + link.slice(1)}

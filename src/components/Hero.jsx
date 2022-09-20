@@ -15,7 +15,7 @@ const Hero = () => {
             <span className="hover:text-red-600">a</span>
             <span className="hover:text-blue-800">s</span> 
           </h1>
-          <button className="border-white bg-white/80 hover:scale-110 duration-200 hover:bg-slate-600 hover:text-white text-black mx-4 text-2xl absolute bottom-10 justify-right">Order Yours Here!</button>
+          <button className="border-white bg-white/80 hover:scale-110 duration-200 hover:bg-slate-600 hover:text-white text-black mx-5 text-2xl absolute bottom-10 justify-right">Order Yours Here!</button>
         </div>
         <img
           className="w-full max-h-[500px] object-cover"
