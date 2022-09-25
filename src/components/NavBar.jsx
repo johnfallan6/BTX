@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
+import { BiLogIn } from "react-icons/bi";
 import { links } from "../Data/links";
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
   return (
     <div
       name="navbar"
-      className="navBar max-w-[1280px] mx-auto flex justify-between items-center p-4"
+      className="navBar max-w-[1280px] mx-auto flex justify-between items-center p-4 h-30 fixed-top"
     >
       {/* left-side nav  */}
       <div className="flex items-center justify-start">
@@ -38,6 +39,10 @@ const NavBar = () => {
           className="bg-transparent focus:outline-none"
         />
       </div>
+      {/* Login In Button */}
+      <button className="hidden md:flex items-center justify-center bg-gray-200 rounded-full p-3 cursor-pointer hover:scale-105 hover:border-2 hover:bg-gray-100 hover:border-blue-600 hover:text-blue-600 duration-300">
+        <BiLogIn size={20} /> Login
+      </button>
       {/* cart button */}
       <button className="hidden md:flex items-center justify-center bg-gray-200 rounded-full p-3 cursor-pointer hover:scale-105 hover:border-2 hover:bg-gray-100 hover:border-blue-600 hover:text-blue-600 duration-300">
         <BsFillCartFill size={20} /> Cart

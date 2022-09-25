@@ -1,15 +1,26 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import NavBar from "./components/NavBar";
-import ProductCards from "./components/ProductCards";
+import React from "react";
+import Main from "./components/Main";
+
+// const store = ConfigureStore();
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <Provider store={store}>
+//         <BrowserRouter>
+//           <div className="App">
+//             <Main />
+//           </div>
+//         </BrowserRouter>
+//       </Provider>
+//     );
+//   }
+// }
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Hero />
-      <ProductCards />
-      <About />
+      <Main />
     </div>
   );
 }

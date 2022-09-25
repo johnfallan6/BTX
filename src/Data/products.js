@@ -1,25 +1,25 @@
 export const products = [
   {
     id: 1,
-    title: "hawkeyes",
+    title: "college football",
     src: "Hawkeyes.jpg",
     alt: "Iowa Hawkeyes Boards",
   },
   {
     id: 2,
-    title: "cubs",
+    title: "MLB",
     src: "Cubs.jpg",
     alt: "Chicago Cubs Boards",
   },
   {
     id: 3,
-    title: "diamondbacks",
+    title: "MLB",
     src: "Diamondbacks.jpg",
     alt: "Arizona Diamondbacks Boards",
   },
   {
     id: 4,
-    title: "steelers",
+    title: "NFL",
     src: "Steelers 2.png",
     alt: "Pittsburgh Steelers Boards",
   },
@@ -31,8 +31,26 @@ export const products = [
   },
   {
     id: 6,
-    title: "UT",
+    title: "College Football",
     src: "UT.png",
     alt: "UT Boards",
+  },
+  {
+    id: 7,
+    title: "Custom Family",
+    src: "Salazar.png",
+    alt: "Salazar Family Boards",
+  },
+  {
+    id: 8,
+    title: "Texas",
+    src: "Texas.png",
+    alt: "Texas Boards",
+  },
+  {
+    id: 9,
+    title: "High School",
+    src: "Lago.png",
+    alt: "Lago Vista High School Boards",
   },
 ];
